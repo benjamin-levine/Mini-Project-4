@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Stream</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <form action="/add" method = "POST">
+        <h3>Name</h3>
+        <input type="text" name="userName">
+        <h3>Title</h3>
+        <input type="text" name="title">
+        <br></br>
+        <h3>Post Here</h3>
+        <input type="text" name="postSpace">
+        <input type="submit" value="add">
+    </form>
+
+    <h2>Blog Posts</h2>
+        <% blogPosts.forEach(post => { %>
+            <div>
+                <h3><%= post.title %></h3>
+                <p>By: <%= post.userName %></p>
+                <p>Posted at: <%= post.timeOfPost %></p>
+                <p><%= post.postSpace %></p>
+                
+                
+            </div>
+        <% }); %>
+
+        
+</body>
+</html>

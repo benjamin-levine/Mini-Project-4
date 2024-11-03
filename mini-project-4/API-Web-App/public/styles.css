@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(170, 187, 206);
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 40px; 
+}
+
+.form-submit, .form-submit2 {
+    color: rgb(32, 3, 3);
+    padding: 15px 25px;
+    margin: 0 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.fact, .fact2 {
+    background-color: aliceblue;
+    text-align: center;
+}
